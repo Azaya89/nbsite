@@ -120,7 +120,7 @@ markers = ["slow: mark test as slow to run (deselect with '-m not slow')",]
 include-package-data = true
 
 [tool.setuptools.packages.find]
-include = ["nbsite"]
+include = ["nbsite", "nbsite.*"]
 
 [tool.setuptools_scm]
 version_file = "nbsite/_version.py"
