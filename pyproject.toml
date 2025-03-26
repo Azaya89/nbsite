@@ -66,8 +66,8 @@ tests = [
     'pre-commit',
 ]
 
-[project.scripts]
-nbsite = "nbsite.scripts.conda:build"
+# [project.scripts]
+# nbsite = "nbsite.scripts.conda:build"
 
 [project.urls]
 Documentation = "https://nbsite.holoviz.org/"
