@@ -66,9 +66,6 @@ tests = [
     'pre-commit',
 ]
 
-# [project.scripts]
-# nbsite = "nbsite.scripts.conda:build"
-
 [project.urls]
 Documentation = "https://nbsite.holoviz.org/"
 Source = "https://github.com/holoviz-dev/nbsite"
@@ -120,7 +117,7 @@ markers = ["slow: mark test as slow to run (deselect with '-m not slow')",]
 include-package-data = true
 
 [tool.setuptools.packages.find]
-include = ["nbsite", "nbsite.*"]
+include = ["nbsite"]
 
 [tool.setuptools_scm]
 version_file = "nbsite/_version.py"
