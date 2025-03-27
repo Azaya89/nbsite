@@ -54,6 +54,9 @@ dependencies = [
     'packaging'
 ]
 
+[project.scripts]
+nbsite = "nbsite.__main__:main"
+
 [project.optional-dependencies]
 refman = ['graphviz']
 gallery = [
@@ -115,6 +118,9 @@ markers = ["slow: mark test as slow to run (deselect with '-m not slow')",]
 
 [tool.setuptools]
 include-package-data = true
+
+[tool.setuptools.data-files]
+scripts = ["scripts/*.py"]
 
 [tool.setuptools.packages.find]
 include = ["nbsite"]
